@@ -33,7 +33,7 @@ app.get('*',(req,res)=>{
 	res.sendFile('public/index.html');
 })
 
-const port = 7000;
+const port = process.env.PORT || 7000;
 
 app.listen(port,()=>{
     console.log('Server started on port '+port);
