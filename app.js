@@ -30,7 +30,7 @@ app.get('/',function(req,res){
     res.send('Hello');
 });
 app.get('*',(req,res)=>{
-	res.sendFile('public/index.html');
+	res.sendFile(path.join(__dirname,'public/index.html'));
 })
 
 const port = process.env.PORT || 7000;
