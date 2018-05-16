@@ -214,11 +214,11 @@ var CarService = /** @class */ (function () {
         this._http = _http;
     }
     CarService.prototype.car = function () {
-        return this._http.get('/cars/models')
+        return this._http.get('cars/models')
             .map(function (res) { return res.json(); });
     };
     CarService.prototype.carModels = function () {
-        return this._http.get('/cars/carModels')
+        return this._http.get('cars/carModels')
             .map(function (res) { return res.json(); });
     };
     CarService = __decorate([
